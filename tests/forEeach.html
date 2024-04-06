@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loops/ for each</title>
+</head>
+<body>
+
+    <header>Hello world</header>
+
+    <script>
+
+
+
+let nelsonList = [1,5,2]
+let list = [21, 9, 5, 1, 20] // 21
+let list2 = [3,11,10,11,0] // 11
+let list3 = [1,0,2,3,5,-1] // 5
+
+function length(list) {
+
+ 
+}
+
+length(nelsonList)  // 3     // length(list) // 5
+
+
+
+function findTheMax(list) {
+  let largestNumber = list[0]
+  let i = 0
+  
+  while (i < list.length) {
+    // if the current number > largestNumber
+    // largestNumber = current number
+    if(list[i] > largestNumber) {
+      largestNumber = list[i]
+    }
+  
+    i++
+  }
+
+  return largestNumber
+}
+
+// console.log(findTheMax(list)) // 21
+// console.log(findTheMax(list2)) // 11
+// console.log(findTheMax(list3)) // 5
+
+function findTheMin(list) {
+  let smallestNumber = list[0]
+  let i = 0;
+
+  while (i < list.length) {
+    if(list[i] < smallestNumber) {
+      smallestNumber = list[i]
+    }
+
+    console.log({ i, number: list[i], smallestNumber })
+
+    i++
+  }
+
+  return smallestNumber
+}
+
+// list
+
+// i = 0; number = 21 smallesNumber = 21
+// i = 1; number =  9 smallestNumber = 9
+// i = 2; number = 5  smallestNumber = 5
+// i = 3; number = 1 smallestNumbr = 1
+// i = 4; number = 20 smallestNumber =1
+// i = 5; end
+
+// list2
+
+// i = 0; number = 3 smallestNumber = 3
+// i = 1; number = 11 smallestNumbr = 3
+// i = 2; number = 10 smallestNumber = 3
+// i = 3; number = 11 smallestNumber = 3
+// i = 4; number = 0 smallestNumber = 0
+// i = 5; end
+
+// list3
+
+// i = 0; number  = 1 smallestNumber = 1
+// i = 1; number = 0 smallestNumber = 0
+// i = 2; number = 2 smallestNumber = 0
+// i = 3; number = 3 smallestNumber = 0
+// i = 4; number = 5 smallestNumber = 0
+// i = 5; number = -1 smallestNumber = -1
+// i = 6; end
+
+
+
+// console.log(findTheMin(list)) // 1
+// console.log(findTheMin(list2)) // 0
+console.log(findTheMin(list3)) // -1
+
+
+// list3
+// i = 0; number = 1 largestNumber = 1
+// i = 1; number = 0 largestNumber = 1
+// i = 2; number = 2 largestNumber = 2
+// i = 3; number = 3 largestNumber = 3
+// i = 4; number = 5 largestNumber = 5
+// i = 5; number = -1 largestNumber = 5
+// i = 6; end
+
+// list2
+// i   number    largestNumber
+// i = 0; number = 3 largestNumber = 3
+// i = 1; number = 11 largestNumber = 11
+// i = 2; number = 10 largest number = 11
+// i = 3; number = 11 largestNumber = 11
+// i = 4; number = 0 largesNumber = 11
+// i = 5; end
+
+// list
+// i = 0; number = 21 largestNumber = 21 
+// i = 1; number = 9 largestNumber = 21
+// i = 2 number = 5 largestNumber = 21
+// i = 3 number = 1 largestNumber = 21
+// i = 4 number = 20 largestNumber = 21
+// i = 5 end 
+
+// function findTheMax(list) {
+
+//   for (let i = 0; i < list.length; i++) {
+
+//     if(i > largestNumber) {}
+
+//   }
+  
+
+// }
+
+
+
+// console.log(findTheMax(list)) // 21
+// findTheMax(list2) // 11
+// findTheMax(list3) // 5
+
+</script>
+</body>
+</html>

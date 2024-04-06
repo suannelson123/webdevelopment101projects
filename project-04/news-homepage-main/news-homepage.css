@@ -1,0 +1,105 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: inter;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+
+
+}
+
+
+body {
+
+    background: purple;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.news-homepage-container {
+
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    padding: 30px 30px;
+
+}
+
+
+.nav {
+    min-width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+.nav-btn {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: transparent;
+    border: none;
+    padding: 5px 0px;
+}
+
+.nav-line-btn {
+    width: 50px;
+    height: 5px;
+    display: block;
+    background-color: black;
+}
+
+.retro-container {
+    font-family: inter;
+}
+
+.retro {
+    width: 100%;
+    height: auto    ;
+}
+
+.retro-heading {
+    margin-top: 10px;
+    padding-right: 50px;
+    color: hsl(240, 100%, 5%);
+    font-weight: 800;
+}
+
+
+.retro-p {
+
+    font-family: inter, serif;
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+    font-weight: 500;
+    padding-right: 20px;
+    margin-top: 20px;
+    
+
+
+}
+
+.retro-button {
+
+    max-width: 100%;
+    height: 100%;
+    padding: 15px 20px;
+    font-family: inter;
+    font-weight: 800;
+    color: #FFF;
+    background: hsl(5, 85%, 63%);
+    border: none;
+    letter-spacing: 5px;
+    margin-top: 20px;
+}

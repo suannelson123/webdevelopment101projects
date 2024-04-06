@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>HTML Video Player</title>
+    <link rel="stylesheet" href="customHTMLvideo.css" />
+    <link rel="icon" href="https://fav.farm/🔥" />
+</head>
+
+<body>
+
+    <div class="title">
+        <img class="poster" src="./videos/17353.jpg" alt="">
+        <h1>ONE PIECE</h1>
+        
+    </div>
+
+    <div class="video-container">
+        <div class="video-wrapper">
+            <video src="./videos/[AH] One Piece - 001 (1080p).mkv.webm" poster="./videos/image.jpg"></video>
+            <div class="utils">
+
+
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progressbar-filled"></div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="controls">
+                    <button class="play-button" title="play/pause"><img width="30" height="30"
+                            src="https://img.icons8.com/ios-glyphs/30/FFFFFF/play--v1.png" alt="play--v1" /></button>
+                    <input type="range" name="volume" id="video-volume" min="0" max="1" step="0.05" value="1">
+                    <input type="range" name="playbackRate" id="video-playbackrate" min="0.5" max="2" step="0.1"
+                        value="1" title="adjustsSpeed">
+                    <button class="playback" title="rewind">
+                        <img width="40" height="40"
+                            src="https://img.icons8.com/external-creatype-glyph-colourcreatype/64/FFFFFF/external-rewind-interface-a2-creatype-glyph-colourcreatype-2.png"
+                            alt="external-rewind-interface-a2-creatype-glyph-colourcreatype-2" />
+                    </button>
+                    <button class="fastforward" title="fastForward">
+                        <img width="40" height="40"
+                            src="https://img.icons8.com/external-creatype-glyph-colourcreatype/64/FFFFFF/external-rewind-interface-a2-creatype-glyph-colourcreatype.png"
+                            alt="external-rewind-interface-a2-creatype-glyph-colourcreatype" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="customHTMvideo.js"></script>
+</body>
+
+</html>

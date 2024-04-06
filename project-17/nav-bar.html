@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./nav-bar.css">
+    <title>nav-bar</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <ul class="header-ul">
+                <li class="list"><a href="#">Home</a></li>
+                <li class="list"><a href="#">About</a></li>
+                <li class="list"><a href="#">Contact</a></li>
+                <li class="list"><a href="#">Services</a></li>
+                <li class="list"><a href="#">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <p class="paragraph"><a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit eveniet,
+                    beatae sed
+                    explicabo nulla officia libero perspiciatis ipsa eaque, natus quaerat quia, provident sapiente at
+                    dicta
+                    neque architecto. Perferendis, doloribus.</a></p>
+            <p class="paragraph"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sunt nisi
+                    inventore,
+                    molestiae similique deserunt odit corporis doloribus suscipit fugiat quisquam quae quo veniam
+                    voluptas
+                    doloremque, ducimus in atque nemo.</a></p>
+            <p class="paragraph"><a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, nemo hic
+                    eos eligendi
+                    iusto alias velit unde quo voluptate magni quidem possimus repellat laborum natus vero. Recusandae
+                    in
+                    tenetur asperiores.</a></p>
+            <p class="paragraph"><a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro nihil
+                    repellat
+                    voluptatum consequuntur dolorem deserunt accusamus voluptate asperiores quam facilis nam facere
+                    quisquam
+                    quae, molestias deleniti est adipisci iure. Tempora.</a></p>
+            <p class="paragraph"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro,
+                    error facilis
+                    hic modi quaerat! Voluptatum recusandae nemo quae magnam? Minus placeat velit obcaecati aut,
+                    voluptates
+                    quidem eius dolor. Aut?</a></p>
+        </div>
+
+    </main>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('a')
+            const highlight = document.createElement('span')
+
+
+            highlight.classList.add('highlight')
+            document.body.append(highlight)
+
+
+            function highlighted() {
+                const linksCoordinates = this.getBoundingClientRect()
+                const coordinates = {
+                    width: linksCoordinates.width,
+                    height: linksCoordinates.height,
+                    top: linksCoordinates.top + window.scrollY,
+                    left: linksCoordinates.left + window.scrollX
+                }
+
+                highlight.style.width = `${coordinates.width}px`
+                highlight.style.height = `${coordinates.height}px`
+                highlight.style.transform = `translate(${coordinates.left}px, ${coordinates.top}px)`
+
+                console.log(linksCoordinates)
+
+            }
+
+            links.forEach(link => link.addEventListener('mouseenter', highlighted));
+
+            console.log(highlight)
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Drumkit.css">
+    <link rel="shortcut icon" href="./images/icons8-snare-drum-32.png" type="image/x-icon">
+    <title>DrumKit</title>
+</head>
+
+<body>
+    <header>
+        <h1>Drumkit Sample</h1>
+    </header>
+
+    <div class="drumkit-container">
+        <div class="keys">
+            <button data-key="65" class="key"><kbd>A</kbd>
+                <span class="sound">Crash</span>
+            </button>
+            <button data-key="83" class="key"><kbd>S</kbd>
+                <span class="sound">Kick</span>
+            </button>
+            <button data-key="68" class="key"><kbd>D</kbd>
+                <span class="sound">Snare</span>
+            </button>
+            <button data-key="70" class="key"><kbd>F</kbd>
+                <span class="sound">Tom</span>
+            </button>
+            <button data-key="71" class="key"><kbd>G</kbd>
+                <span class="sound">Tom2</span>
+            </button>
+            <button data-key="72" class="key"><kbd>H</kbd>
+                <span class="sound">Tom3</span>
+            </button>
+            <button data-key="74" class="key"><kbd>J</kbd>
+                <span class="sound">Tom4</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="audios">
+        <div class="crash">
+            <audio data-key="65" src="./drumkits/crash.mp3" id="crash"></audio>
+        </div>
+        <div class="kick">
+            <audio data-key="83" src="./drumkits/kick-bass.mp3" id="kick"></audio>
+        </div>
+        <div class="snare">
+            <audio data-key="68" src="./drumkits/snare.mp3" id="snare"></audio>
+        </div>
+        <div class="tom1">
+            <audio data-key="70" src="./drumkits/tom-1.mp3" id="tom"></audio>
+        </div>
+        <div class="tom2">
+            <audio data-key="71" src="./drumkits/tom-2.mp3" id="tom1"></audio>
+        </div>
+        <div class="tom3">
+            <audio data-key="72" src="./drumkits/tom-3.mp3" id="tom2"></audio>
+        </div>
+        <div class="tom4">
+            <audio data-key="74" src="./drumkits/tom-4.mp3" id="tom3"></audio>
+        </div>
+
+
+
+
+    </div>
+
+    <script src="Drumkit.js"></script>
+</body>
+
+</html>

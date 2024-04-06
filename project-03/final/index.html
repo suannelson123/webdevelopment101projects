@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: mediumaquamarine;
+    }
+
+    .header {
+      position: relative;
+      background: white;
+      border-radius: 40px;
+      width: 100%;
+      height: 80px;
+      margin-top: 40px;
+      z-index: 2;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-background {
+      background-image: url("https://images.unsplash.com/photo-1696928634052-41aa345ef686?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80");
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      background-size: cover;
+    }
+
+    .hero {
+      position: relative;
+      height: 658px;
+      margin-top: -120px;
+    }
+
+    .book-room {
+      width: 100%;
+      height: 320px;
+      border-radius: 40px;
+      background: aquamarine;
+
+      margin-top: 78px;
+      margin-bottom: 78px;
+    }
+
+    .container {
+      max-width: 1194px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .title {
+      position: absolute;
+      z-index: 9999;
+      color: white;
+      bottom: 87px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 360px);
+      gap: 40px;
+    }
+
+    .services>div:nth-child(odd) {
+      background: red;
+    }
+
+    .services>div:nth-child(even) {
+      background: blue;
+    }
+
+    .span-2-rows {
+      grid-row: span 2;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header container">
+    <!-- header contents -->
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-background"></div>
+    <div class="container">
+      <h1 class="title">
+        Discover Extraordinary
+        Comfort in Hotels
+      </h1>
+    </div>
+    <!-- hero contents -->
+  </div>
+
+  <!-- BOOK ROOM -->
+  <div class="book-room container">
+    <!-- book room contents -->
+  </div>
+
+  <!-- SERVICES -->
+  <div class="services container">
+    <div class="span-2-rows"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <!-- services contents -->
+  </div>
+
+  <!-- OFFERS -->
+  <div class="offers">
+    <!-- offers contents -->
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <!-- footer contents -->
+  </footer>
+</body>
+
+</html>

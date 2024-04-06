@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="photo-gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        
+    <title>Photo Gallery</title>
+</head>
+
+<body>
+    <section class="header-container" id="section1">
+        <div class="photo-gallery-headers">
+            <div class="nav">
+                <ul class="photo-gallery-list-container">
+                    <li class="photo-galery-text-logo">
+                        <h1 class="header-text-logo">PHOTO GALLERY LOGO</h1>
+                    </li>
+                    <li class="photo-gallery-list-nav-text"><a href="">Buy Art<span class="material-symbols-outlined">
+                                arrow_drop_down
+                            </span></a></li>
+                    <li class="photo-gallery-list-nav-text"><a href="">Sell Art<span class="material-symbols-outlined">
+                                arrow_drop_down
+                            </span></a></li>
+                    <li class="photo-gallery-list-nav-text"><a href="">About Us</a></li>
+                    <div class="separator">
+                        <li class="photo-gallery-list-nav-text"><a href="">Your Account<span
+                                    class="material-symbols-outlined">
+                                    arrow_drop_down
+                                </span></a></li>
+                        <li class="photo-gallery-list-nav-text"><a href="">Help</a></li>
+                    </div>
+
+
+
+
+
+                </ul>
+            </div>
+
+        </div>
+        
+
+
+        <div class="photo-gallery-input-container">
+            <span class="input-text">SIMPLY ART. SIMPLY BEAUTIFUL.</span>
+            <div class="photo-gallery-search-input">
+                <button type="button" class="searchbtn"><img
+                        src="../photo gallery/images/search_FILL0_wght400_GRAD0_opsz24.svg" alt="p"></button>
+                <input type="search" placeholder="Enter Album ID" name="" id="album-id">
+
+    </section>
+
+
+
+
+    <section class="gallery-container">
+
+        <div class="categories-wrapper">
+            <h1>CATEGORIES</h1>
+            <div class="prev-next-limit-container">
+                <button id="prevPageBtn" class="photo-gallery-button">Previous Page</button>
+                <div class="page-counter">
+                    <p id="currentPage">Page: 1</p>
+                </div>
+                <button id="nextPageBtn" class="photo-gallery-button">Next Page</button>
+                <label class="page-label" for="pageLimit">Photos Per Page:</label>
+                <select id="pageLimit">
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                    <option value="35">35</option>
+                    <option value="40">40</option>
+                    <option value="45">45</option>
+                    <option value="50">50</option>
+                </select>
+                <button id="setPageLimitBtn">Set Page Limit</button>
+            </div>
+        </div>
+        <div id="photo-container"></div>
+
+
+
+
+        <div class="popup-image">
+            <img class="img-popup" src="https://via.placeholder.com/600/92c952" alt="tangina">
+            <p class="img-title"></p>
+            <span class="close-button">&times;</span>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="photo-gallery.js"></script>
+
+</body>
+
+</html>

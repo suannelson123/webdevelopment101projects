@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>follow the leader</title>
+</head>
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body  {
+        width: 100%;
+        height:  100vh;
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 500px;
+        height: 500px;
+        background-image: url('../project-6/images/amin-rk-35193HMwxmM-unsplash.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: blur(10px);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 5rem;
+        font-family: sans-serif;
+        position: relative;
+    }
+    
+
+    #clickMe {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1rem;
+        font-weight: 900;
+    }
+    
+    
+</style>
+<body>
+    
+    <div class="container">
+        <button id="clickMe">clickMe</button>
+        <div class="soldier">1</div>
+        <div class="soldier">2</div>
+        <div class="soldier">3</div>
+        <div class="soldier">4</div>
+        <div class="soldier">5</div>
+        <div class="soldier">6</div>
+        <div class="soldier">7</div>
+
+        <div id="last-soldier"></div>
+    </div>
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+        const clickMebtn = document.getElementById('clickMe');
+        const soldiers = Array.from(document.querySelectorAll('.soldier'));
+        const soldierBadge = soldiers.map((soldier) => {
+            return soldier.textContent;
+        });
+
+        function blasphemeous(n, k) {
+            if (n === 1) {
+                return 1;
+            } else {
+                return (blasphemeous(n - 1, k) + k - 1) % n + 1;
+            }
+        }
+
+        function clickMe() {
+    const k = 2; 
+    const n = soldiers.length;
+
+    const survivorIndex = blasphemeous(n, k);
+
+    const displayLastSoldier = document.getElementById('last-soldier');
+    const textCenter = document.querySelector('.container');
+
+    
+    soldiers.forEach((soldier, index) => {
+        if (index !== survivorIndex - 1) {
+            soldier.style.display = 'none';
+            textCenter.style.justifyContent = 'center'
+        }
+    });
+}
+
+        clickMebtn.addEventListener('click', clickMe);
+    });
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minmax</title>
+</head>
+<body>
+    
+
+
+        <script>
+            
+let nelsonList = [1,5,2]
+let list = [21, 9, 5, 1, 20] // 21
+let list2 = [3,11,10,11,0] // 11
+let list3 = [1,0,2,3,5,-1] // 5
+
+function length(array) {
+
+    let lengths = 0;
+    while(array[lengths] !== undefined) {
+        lengths++;
+    } 
+     
+    
+    return lengths;
+}
+
+
+
+
+    console.log( length(nelsonList) );
+    //lengths = 0; nelsonListLength = 1;
+    //lengths = 1; nelsonListLength = 2;
+    // lengths = 2; nelsonListLength = 3;
+    // lengths = 4; end
+    
+    
+    
+    
+    console.log(length(list));
+    //lengths = 0; listLength = 1;
+    // lengths = 1; listlength = 2;
+    // lengths = 2; listLength = 3;
+    // lengths = 3; listLength = 4;
+    // lengths = 4; listLength = 5;
+    // lengths = 5; listLength = 6;
+    // lengths = 6; end
+    
+
+
+
+    console.log(length(list2));
+    //lengths = 0; list2length = 1;
+    //lengths = 1; list2length = 2;
+    //lengths = 2; list2length = 3;
+    //lengths = 3; list2length = 4;
+    //lengths = 4; list2length = 5;
+    //lengths = 5; list2length = 6;
+    //lengths = 6; end
+
+
+    console.log(length(list3));
+    //lengths = 0; list3length = 1;
+    //lengths = 1; list3length = 2;
+    //lengths = 2; list3length = 3;
+    //lengths = 3; list3length = 4;
+    //lengths = 4; list3length = 5;
+    //lengths = 5; list3length = 6;
+    //lengths = 6; list3length = 7;
+    //lengths = 7; end
+    
+        </script>
+</body>
+</html>

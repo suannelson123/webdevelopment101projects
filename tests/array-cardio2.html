@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Array Cardio 💪💪</title>
+  <link rel="icon" href="https://fav.farm/🔥" />
+</head>
+
+<body>
+  <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
+  <script>
+    // ## Array Cardio Day 2
+
+    const people = [
+      { name: 'Wes', year: 1988 },
+      { name: 'Kait', year: 1986 },
+      { name: 'Irv', year: 1970 },
+      { name: 'Lux', year: 2015 }
+    ];
+
+    const comments = [
+      { text: 'Love this!', id: 523423 },
+      { text: 'Super good', id: 823423 },
+      { text: 'You are the best', id: 2039842 },
+      { text: 'Ramen is my fav food ever', id: 123523 },
+      { text: 'Nice Nice Nice!', id: 542328 }
+    ];
+
+    // Some and Every Checks
+    // Array.prototype.some() // is at least one person 19 or older?
+    const currentYear = (new Date()).getFullYear();
+    const adult = people.some(person => currentYear - person.year >= 19 ? true : false);
+    console.log(adult);
+
+
+    // Array.prototype.every() // is everyone 19 or older?
+
+    const allAdults = people.every(person => currentYear - person.year >= 19 ? true : false);
+
+    const findThisId = 823423;
+    console.log({ allAdults });
+
+
+    // Array.prototype.find()
+    // Find is like filter, but instead returns just the one you are looking for
+    // find the comment with the ID of 823423
+
+
+    const findId = comments.find(idNum => idNum.id == 823423 ? idNum.id : null);
+    const arrayId = comments.map(idNum => idNum.id == idNum.id ? idNum.id : null);
+
+    const filteredId = comments.filter(idNum => {
+      if (idNum.id === findThisId) {
+        return true;
+      }
+    })
+    console.log(...filteredId);
+    console.log(arrayId)
+    // Find the comment with this ID
+    // delete the comment with the ID of 823423
+    // Array.prototype.findIndex()
+    const deleteThisId = 823423
+    const findIndex = comments.findIndex(index => {
+      if(index.id == deleteThisId) {
+        return index.id;
+      }
+     
+    } )
+    console.log(`the index is: ${findIndex}`, comments)
+    comments.splice(findIndex, 1)
+    console.log(comments)
+   
+
+
+  </script>
+</body>
+
+</html>
